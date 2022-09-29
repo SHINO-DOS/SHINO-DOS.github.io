@@ -17,5 +17,5 @@ var coordenadas = () => {
 }
 
 btnyes.addEventListener('click', () => {
-    alert('AHORA SOMOS MEJORES AMIG@S😅');
+    alert('YA SABIA QUE NOS DARIA UN DIA MAS PARA LA ENTREGA GRACIAS');
 });
