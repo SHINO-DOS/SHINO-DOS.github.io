@@ -17,5 +17,5 @@ var coordenadas = () => {
 }
 
 btnyes.addEventListener('click', () => {
-    alert('SI PORQUE ESTUDIASTE CON ANTICIPACION');
+    alert('jesus te ama el te escogio desde el vientre de tu madre, pago el precio por tu pecados en la cruz  del calvario, buscalo ahora.');
 });
