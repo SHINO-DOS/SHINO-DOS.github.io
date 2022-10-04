@@ -17,5 +17,5 @@ var coordenadas = () => {
 }
 
 btnyes.addEventListener('click', () => {
-    alert('jesus te ama el te escogio desde el vientre de tu madre, pago el precio por tu pecados en la cruz  del calvario, buscalo ahora.');
+    alert('ya sabía, que te te gustaba ser un programador ');
 });
