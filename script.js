@@ -17,5 +17,5 @@ var coordenadas = () => {
 }
 
 btnyes.addEventListener('click', () => {
-    alert('ya sabía, que eras RESPONSABLE asi me gusta ');
+    alert('VAMOS CAMPEON NO TE RINDAS ATREVETE A LUCHAR POR TUS SUENÕS ');
 });
