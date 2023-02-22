@@ -1,7 +1,7 @@
 html,
 body {
-    background-image: url(../style.css/FONDO.jpeg);
-    background-size: 99%;
+    background-image: url(.. / style/FONDO.jpeg);
+    background-size: 100%;
 }
 
 .container {
