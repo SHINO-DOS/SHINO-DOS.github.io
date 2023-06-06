@@ -17,5 +17,5 @@ var coordenadas = () => {
 }
 
 btnyes.addEventListener('click', () => {
-    alert('YO YA SABIA QUE ERAS  UNA PERSONA VALIENTE,💪🏻😅 QUE BUENA ACTITUD POSITIVA ANTE TODO 😅💪🏻');
+    alert('YO YA SABIA QUE ME IBAS A PASAR LA PRÁCTICA RESUELTA 😅 JAA GRACIAS 😅💪🏻');
 });
