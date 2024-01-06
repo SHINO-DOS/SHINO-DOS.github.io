@@ -16,7 +16,7 @@ body {
 
 .container .title {
     font-size: 35px;
-    color    : white;
+    color    : Green;
 }
 
 .container .buttons {
@@ -29,7 +29,7 @@ body {
     padding         : 10px 20px;
     font-size       : 18px;
     background-color: #F51C02;
-    color           : white;
+    color           : purple;
     border          : none;
     border-radius   : 3px;
 }
