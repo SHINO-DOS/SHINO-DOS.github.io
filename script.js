@@ -17,5 +17,5 @@ var coordenadas = () => {
 }
 
 btnyes.addEventListener('click', () => {
-    alert(' ya sabia que no estabas listo, sabia que eras conciente, debes prepararte pero!! yaa, vamos tu puedes lograrlo💪🏻');
+    alert('  ya sabia que estabas conciente de que no estabas preparado para el examen,💪🏻 ahora debes prepararte pero!! yaa, vamos tu puedes, puedes lograrlo💪🏻');
 });
