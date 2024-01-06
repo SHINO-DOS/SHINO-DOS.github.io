@@ -1,39 +1,46 @@
-html,
-body {
-    background-image:url('https://www.expreso.com.pe/wp-content/uploads/2022/03/PNP.jpg');
-    background-size:100%;
+html, body {
+    background-image: url('https://www.expreso.com.pe/wp-content/uploads/2022/03/PNP.jpg');
+    background-size: cover;
 }
 
 .container {
-    display        : flex;
-    position       : absolute;
-    width          : 100%;
-    height         : 100%;
-    flex-flow      : column nowrap;
-    align-items    : center;
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    flex-flow: column nowrap;
+    align-items: center;
     justify-content: center;
 }
 
 .container .title {
     font-size: 35px;
-    color    : White;
+    color: White;
 }
 
 .container .buttons {
-    margin-top : 50px;
-    margin-left: -130px;
+    margin-top: 50px;
 }
 
 .container .buttons .btn {
-    position        : absolute;
-    padding         : 10px 20px;
-    font-size       : 18px;
+    position: relative;
+    padding: 10px 20px;
+    font-size: 18px;
     background-color: #F51C02;
-    color           : white;
-    border          : none;
-    border-radius   : 3px;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    margin: 10px;
 }
 
-.container .buttons>#btnno {
-    margin-left: 70px;
+/* Media queries */
+@media (max-width: 600px) {
+    .container .title {
+        font-size: 25px;
+    }
+
+    .container .buttons .btn {
+        font-size: 14px;
+        padding: 5px 10px;
+    }
 }
