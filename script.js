@@ -17,5 +17,13 @@ var coordenadas = () => {
 }
 
 btnyes.addEventListener('click', () => {
-    alert('  ya sabia que estabas conciente de que no estabas preparado para el examen,💪🏻 ahora debes prepararte pero!! yaa, vamos tu puedes, puedes lograrlo💪🏻');
+    alert('  me agrada que seas sincero, Sé que a veces la vida puede ser difícil y los estudios pueden ser estresantes, pero no te rindas. Tienes mucho potencial y talento, y estoy seguro de que puedes lograr tus metas si te esfuerzas y perseveras. Quiero animarte con algunas palabras que me motivan a mí:
+<br>
+- "No importa lo lento que vayas, siempre y cuando no te detengas". - Confucio <br>
+- "El éxito no es definitivo, el fracaso no es fatal: lo que cuenta es el coraje para continuar". - Winston Churchill <br>
+- "Nunca dejes de aprender, porque la vida nunca deja de enseñar". - Desconocido <br>
+- "La felicidad no es algo hecho. Proviene de tus propias acciones". - Dalai Lama <br>
+- "Si puedes soñarlo, puedes hacerlo". - Walt Disney
+
+Espero que estas frases te inspiren y te den fuerza para seguir adelante y estudiando. Recuerda que siempre puedes contar conmigo para ayudarte con cualquier duda o consulta que tengas.😊 💪🏻');
 });
