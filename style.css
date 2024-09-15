@@ -1,79 +1,41 @@
-html, 
+html,
 body {
-    margin: 0;
-    padding: 0;
-    background-image: url('FONDO.jpeg');
-    background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100%;
-    width: 100%;
+    margin          : 0;
+    padding         : 0;
+    font-family     : Arial, Helvetica, sans-serif;
+    background-color: #2bff82;
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display        : flex;
+    position       : absolute;
+    width          : 100%;
+    height         : 100%;
+    flex-flow      : column nowrap;
+    align-items    : center;
     justify-content: center;
-    height: 100vh; /* Usa la altura de la ventana del navegador */
-    width: 100vw;  /* Usa el ancho de la ventana del navegador */
-    box-sizing: border-box;
-    padding: 20px;
-    text-align: center;
 }
 
 .container .title {
-    font-size: 2.5rem; /* Usa rem para que el tamaño de fuente sea relativo al tamaño base */
-    color: green;
-    margin: 0;
+    font-size: 35px;
+    color    : white;
 }
 
 .container .buttons {
-    display: flex;
-    justify-content: center;
-    gap: 20px; /* Espacio entre botones */
-    margin-top: 20px;
+    margin-top : 50px;
+    margin-left: -130px;
 }
 
 .container .buttons .btn {
-    padding: 0.5rem 1rem; /* Usa rem para el padding */
-    font-size: 1rem; /* Usa rem para el tamaño de la fuente */
-    background-color: #63f502;
-    color: purple;
-    border: none;
-    border-radius: 0.5rem; /* Usa rem para los bordes redondeados */
-    cursor: pointer;
-    transition: background-color 0.3s ease; /* Agrega una transición para el cambio de color */
+    position        : absolute;
+    padding         : 10px 20px;
+    font-size       : 18px;
+    background-color: #ff6a94;
+    color           : white;
+    border          : none;
+    border-radius   : 3px;
 }
 
-.container .buttons .btn:hover {
-    background-color: #24c200; /* Cambia el color de fondo cuando el ratón pasa sobre el botón */
-}
-
-/* Media Queries para diferentes resoluciones */
-@media (max-width: 768px) {
-    .container .title {
-        font-size: 2rem;
-    }
-
-    .container .buttons {
-        flex-direction: column; /* Cambia la dirección de los botones en pantallas pequeñas */
-    }
-
-    .container .buttons .btn {
-        width: 100%; /* Botones ocupan todo el ancho en pantallas pequeñas */
-        font-size: 1.2rem;
-        padding: 1rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .container .title {
-        font-size: 1.5rem;
-    }
-
-    .container .buttons .btn {
-        font-size: 1rem;
-        padding: 0.8rem;
-    }
+.container .buttons>#btnno {
+    margin-left: 70px;
 }
