@@ -17,5 +17,7 @@ var coordenadas = () => {
 }
 
 btnyes.addEventListener('click', () => {
-    alert(' Me agrada que seas sincer@, LEE ESTA FRASE: No importa lo lento que vayas, siempre y cuando no te detengas. - Confucio 😊');
+    alert('Me agrada que seas sincer@, LEE ESTA FRASE: No importa lo lento que vayas, siempre y cuando no te detengas. - Confucio 😊');
 });
+
+
