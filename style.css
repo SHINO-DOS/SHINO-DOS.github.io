@@ -1,9 +1,13 @@
 html,
-body {
+/* body {
     margin          : 0;
     padding         : 0;
     font-family     : Arial, Helvetica, sans-serif;
     background-color: #2bff82;
+} */
+body {
+    background-image:url(FONDO.jpeg);
+    background-size:100%;
 }
 
 .container {
