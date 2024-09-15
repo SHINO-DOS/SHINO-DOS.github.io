@@ -1,80 +1,47 @@
-html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    width: 100%;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
+html,
+/* body {
+    margin          : 0;
+    padding         : 0;
+    font-family     : Arial, Helvetica, sans-serif;
+    background-color: #2bff82;
+} */
 body {
-    background-image: url(https://www.hotelvinasqueirolo.com/blog/wp-content/uploads/2020/02/como-hacer-una-pedida-de-mano-especial-en-el-hotel-vinas-queirolo-1066x546.jpg);
-    background-size: cover; /* Asegura que la imagen cubra toda el área visible */
-    background-position: center; /* Centra la imagen */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-image:url(https://www.hotelvinasqueirolo.com/blog/wp-content/uploads/2020/02/como-hacer-una-pedida-de-mano-especial-en-el-hotel-vinas-queirolo-1066x546.jpg);
+    background-size:100%;
 }
 
 .container {
-    display: flex;
-    flex-direction: column; /* Alinea los elementos en una columna */
-    align-items: center; /* Centra los elementos horizontalmente */
-    justify-content: center; /* Centra los elementos verticalmente */
-    height: 100vh; /* Usa la altura completa de la ventana del navegador */
-    width: 100vw; /* Usa el ancho completo de la ventana del navegador */
-    box-sizing: border-box; /* Incluye el padding y el borde en el ancho y alto total */
-    padding: 20px; /* Agrega espacio interior */
-    text-align: center; /* Centra el texto */
+    display        : flex;
+    position       : absolute;
+    width          : 100%;
+    height         : 100%;
+    flex-flow      : column nowrap;
+    align-items    : center;
+    justify-content: center;
 }
 
 .container .title {
-    font-size: 2rem; /* Usa unidades relativas para un tamaño de fuente adaptable */
-    color: white;
-    margin: 0; /* Elimina el margen predeterminado */
+    font-size: 35px;
+    color    : white;
 }
 
 .container .buttons {
-    display: flex; /* Usa flexbox para alinear los botones */
-    flex-direction: row; /* Alinea los botones en una fila */
-    gap: 10px; /* Espacio entre botones */
-    margin-top: 20px; /* Espacio superior */
+    margin-top : 50px;
+    margin-left: -130px;
 }
 
 .container .buttons .btn {
-    padding: 10px 20px; /* Espaciado interior del botón */
-    font-size: 1rem; /* Usa unidades relativas para el tamaño de la fuente del botón */
-    background-color: #63f502; /* Color de fondo del botón */
-    color: white; /* Color del texto del botón */
-    border: none; /* Elimina el borde del botón */
-    border-radius: 5px; /* Bordes redondeados del botón */
-    cursor: pointer; /* Cambia el cursor a una mano cuando se pasa sobre el botón */
-    transition: background-color 0.3s; /* Transición suave para el color de fondo */
+    position        : absolute;
+    padding         : 10px 20px;
+    font-size       : 18px;
+    background-color: #63f502;
+    color           : white;
+    border          : none;
+    border-radius   : 3px;
 }
 
-.container .buttons .btn:hover {
-    background-color: #4caf50; /* Cambia el color de fondo del botón al pasar el ratón */
+.container .buttons>#btnno {
+    margin-left: 70px;
 }
 
-/* Media Queries para adaptar el diseño a diferentes tamaños de pantalla */
-@media (max-width: 768px) {
-    .container .title {
-        font-size: 1.5rem; /* Ajusta el tamaño de la fuente en pantallas más pequeñas */
-    }
 
-    .container .buttons {
-        flex-direction: column; /* Apila los botones verticalmente en pantallas más pequeñas */
-    }
-
-    .container .buttons .btn {
-        width: 100%; /* Hace que los botones ocupen todo el ancho disponible */
-    }
-}
-
-@media (max-width: 480px) {
-    .container .title {
-        font-size: 1.2rem; /* Ajusta el tamaño de la fuente para pantallas aún más pequeñas */
-    }
-
-    .container .buttons .btn {
-        font-size: 0.9rem; /* Ajusta el tamaño de la fuente del botón */
-        padding: 8px 16px; /* Ajusta el padding del botón */
-    }
-}
