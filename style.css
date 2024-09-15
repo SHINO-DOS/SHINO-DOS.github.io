@@ -1,12 +1,12 @@
 html, body {
     margin: 0;
     padding: 0;
-    height: 100%;
-    width: 100%;
     background-image: url('FONDO.jpeg');
     background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
     background-position: center;
     background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
 }
 
 .container {
@@ -22,25 +22,25 @@ html, body {
 }
 
 .container .title {
-    font-size: 2rem; /* Usa rem para que el tamaño de fuente sea relativo al tamaño base */
-    color: Green;
+    font-size: 2.5rem; /* Usa rem para que el tamaño de fuente sea relativo al tamaño base */
+    color: green;
     margin: 0;
 }
 
 .container .buttons {
     display: flex;
-    flex-direction: column; /* Cambia la dirección de los botones en pantallas pequeñas */
+    justify-content: center;
     gap: 20px; /* Espacio entre botones */
     margin-top: 20px;
 }
 
 .container .buttons .btn {
-    padding: 10px 20px;
+    padding: 0.5rem 1rem; /* Usa rem para el padding */
     font-size: 1rem; /* Usa rem para el tamaño de la fuente */
     background-color: #2bf502;
     color: purple;
     border: none;
-    border-radius: 5px; /* Usa un borde redondeado más grande */
+    border-radius: 0.5rem; /* Usa rem para los bordes redondeados */
     cursor: pointer;
     transition: background-color 0.3s ease; /* Agrega una transición para el cambio de color */
 }
@@ -49,30 +49,30 @@ html, body {
     background-color: #24c200; /* Cambia el color de fondo cuando el ratón pasa sobre el botón */
 }
 
-/* Media Queries para adaptar el diseño en diferentes resoluciones */
+/* Media Queries para diferentes resoluciones */
 @media (max-width: 768px) {
     .container .title {
-        font-size: 1.5rem; /* Ajusta el tamaño de la fuente en pantallas más pequeñas */
+        font-size: 2rem;
     }
 
     .container .buttons {
-        flex-direction: column; /* Asegura que los botones se apilen verticalmente */
+        flex-direction: column; /* Cambia la dirección de los botones en pantallas pequeñas */
     }
 
     .container .buttons .btn {
-        width: 100%; /* Los botones ocupan todo el ancho en pantallas pequeñas */
+        width: 100%; /* Botones ocupan todo el ancho en pantallas pequeñas */
         font-size: 1.2rem;
-        padding: 12px;
+        padding: 1rem;
     }
 }
 
 @media (max-width: 480px) {
     .container .title {
-        font-size: 1.2rem; /* Ajusta el tamaño de la fuente para pantallas aún más pequeñas */
+        font-size: 1.5rem;
     }
 
     .container .buttons .btn {
         font-size: 1rem;
-        padding: 10px;
+        padding: 0.8rem;
     }
 }
