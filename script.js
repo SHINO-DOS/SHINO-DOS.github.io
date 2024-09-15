@@ -1,4 +1,3 @@
-
 var btnno = document.getElementById('btnno');
 var btnyes = document.getElementById('btnyes');
 
@@ -18,7 +17,7 @@ var coordenadas = () => {
 }
 
 btnyes.addEventListener('click', () => {
-    alert('Me agrada que seas sincer@, LEE ESTA FRASE: No importa lo lento que vayas, siempre y cuando no te detengas. - Confucio 😊');
+    alert('Ya sabia que te gustaba, esa es la actitud');
 });
 
 
