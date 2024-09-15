@@ -38,7 +38,7 @@ body {
 .container .buttons .btn {
     padding: 0.5rem 1rem; /* Usa rem para el padding */
     font-size: 1rem; /* Usa rem para el tamaño de la fuente */
-    background-color: #2bf502;
+    background-color: #63f502;
     color: purple;
     border: none;
     border-radius: 0.5rem; /* Usa rem para los bordes redondeados */
