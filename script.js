@@ -17,7 +17,7 @@ var coordenadas = () => {
 }
 
 btnyes.addEventListener('click', () => {
-    alert('Me gusta tu sinceridad, vamos ponte las pias y estudia hasta dominar la materia :D ');
+    alert('Me gusta tu sinceridad, vamos ponte las pilas y estudia hasta dominar la materia :D ');
 });
 
 
