@@ -36,8 +36,8 @@ body {
 
 .container .buttons .btn {
     position        : absolute;
-    padding         : 10px 20px;
-    font-size       : 18px;
+    padding         : 5px 10px;
+    font-size       : 15px;
     background-color: #63f502;
     color           : white;
     border          : none;
@@ -45,7 +45,7 @@ body {
 }
 
 .container .buttons>#btnno {
-    margin-left: 70px;
+    margin-left: 50px;
 }
 /* esto es agregado */
 @media (max-width: 768px) {
