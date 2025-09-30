@@ -1,47 +1,85 @@
-html,
-/* body {
-    margin          : 0;
-    padding         : 0;
-    font-family     : Arial, Helvetica, sans-serif;
-    background-color: #2bff82;
-} */
-body {
-    background-image:url(https://media.istockphoto.com/id/626866198/es/foto/silueta-del-hombre-joven-con-anillo-de-compromiso-proponiendo-a-la-mujer.jpg?s=1024x1024&w=is&k=20&c=EAxixIR2d1qiPzi5H3jGLjBkJwM3KpMZ_F4zS2qXsRo=);
-    background-size:100%;
-}
+ body {
+      margin: 0;
+      padding: 0;
+      font-family: "Arial", sans-serif;
+      background-image: url("https://media.istockphoto.com/id/626866198/es/foto/silueta-del-hombre-joven-con-anillo-de-compromiso-proponiendo-a-la-mujer.jpg?s=1024x1024&w=is&k=20&c=EAxixIR2d1qiPzi5H3jGLjBkJwM3KpMZ_F4zS2qXsRo=");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
 
-.container {
-    display        : flex;
-    position       : absolute;
-    width          : 100%;
-    height         : 100%;
-    flex-flow      : column nowrap;
-    align-items    : center;
-    justify-content: center;
-}
+    .container {
+      text-align: center;
+      color: white;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 30px;
+      border-radius: 10px;
+      width: 90%;
+      max-width: 400px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    }
 
-.container .title {
-    font-size: 35px;
-    color    : white;
-}
+    .title {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 25px;
+    }
 
-.container .buttons {
-    margin-top : 50px;
-    margin-left: -130px;
-}
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
 
-.container .buttons .btn {
-    position        : absolute;
-    padding         : 10px 20px;
-    font-size       : 18px;
-    background-color: #63f502;
-    color           : white;
-    border          : none;
-    border-radius   : 3px;
-}
+    .btn {
+      padding: 12px 25px;
+      font-size: 1rem;
+      background-color: #63f502;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
 
-.container .buttons>#btnno {
-    margin-left: 70px;
-}
+    .btn:hover {
+      background-color: #4cd100;
+      transform: scale(1.05);
+    }
 
+    /* 🔹 RESPONSIVIDAD */
+    @media (max-width: 768px) {
+      .title {
+        font-size: 1.6rem;
+      }
 
+      .btn {
+        font-size: 0.9rem;
+        padding: 10px 18px;
+      }
+
+      .container {
+        width: 95%;
+        padding: 20px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      body {
+        background-position: top;
+      }
+
+      .title {
+        font-size: 1.4rem;
+      }
+
+      .btn {
+        width: 100%;
+        font-size: 0.95rem;
+      }
+    }
