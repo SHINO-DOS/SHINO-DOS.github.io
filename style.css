@@ -6,11 +6,12 @@ html,
     background-color: #2bff82;
 } */
 body {
-    background-image:url(https://media.istockphoto.com/id/626866198/es/foto/silueta-del-hombre-joven-con-anillo-de-compromiso-proponiendo-a-la-mujer.jpg?s=1024x1024&w=is&k=20&c=EAxixIR2d1qiPzi5H3jGLjBkJwM3KpMZ_F4zS2qXsRo=);
-     background-size: cover;          /* Ajusta el fondo al tamaño del contenedor manteniendo proporción */
-    background-position: center;     /* Centra la imagen */
-    background-repeat: no-repeat;    /* Evita que se repita */
-    background-attachment: fixed; 
+     background-image: url("...tu-imagen.jpg");
+  background-size: cover;
+  background-position: 50% 30%;  /* Mueva el foco vertical (ajusta % hasta que se vea bien) */
+  background-repeat: no-repeat;
+  background-attachment: scroll; /* mejor para móviles */
+  min-height: 100vh;
 }
 
 .container {
