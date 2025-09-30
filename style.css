@@ -1,85 +1,89 @@
- body {
-      margin: 0;
-      padding: 0;
-      font-family: "Arial", sans-serif;
-      background-image: url("https://cdn.shopify.com/s/files/1/0503/6153/2583/files/2_191d6379-b66b-4318-8f71-684f8ff5da76_1024x1024.png?v=1723633082");
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  background-image: url("https://cdn.shopify.com/s/files/1/0503/6153/2583/files/2_191d6379-b66b-4318-8f71-684f8ff5da76_1024x1024.png?v=1723633082");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* evita scroll al moverse el botón */
+}
 
-    .container {
-      text-align: center;
-      color: white;
-      background: rgba(0, 0, 0, 0.5);
-      padding: 30px;
-      border-radius: 10px;
-      width: 90%;
-      max-width: 400px;
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-    }
+.container {
+  text-align: center;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 30px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  position: relative; /* importante para mover el botón dentro */
+}
 
-    .title {
-      font-size: 2rem;
-      font-weight: bold;
-      margin-bottom: 25px;
-    }
+.title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
 
-    .buttons {
-      display: flex;
-      justify-content: center;
-      gap: 15px;
-      flex-wrap: wrap;
-    }
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 100px;
+}
 
-    .btn {
-      padding: 12px 25px;
-      font-size: 1rem;
-      background-color: #63f502;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: 0.3s;
-    }
+.btn {
+  padding: 12px 25px;
+  font-size: 1rem;
+  background-color: #63f502;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
 
-    .btn:hover {
-      background-color: #4cd100;
-      transform: scale(1.05);
-    }
+.btn:hover {
+  background-color: #4cd100;
+  transform: scale(1.05);
+}
 
-    /* 🔹 RESPONSIVIDAD */
-    @media (max-width: 768px) {
-      .title {
-        font-size: 1.6rem;
-      }
+/* Botón No libre (se puede mover) */
+#btnno {
+  position: absolute;
+}
 
-      .btn {
-        font-size: 0.9rem;
-        padding: 10px 18px;
-      }
+/* 🔹 RESPONSIVIDAD */
+@media (max-width: 768px) {
+  .title {
+    font-size: 1.4rem;
+  }
 
-      .container {
-        width: 95%;
-        padding: 20px;
-      }
-    }
+  .btn {
+    font-size: 0.9rem;
+    padding: 10px 18px;
+  }
 
-    @media (max-width: 480px) {
-      body {
-        background-position: top;
-      }
+  .container {
+    width: 95%;
+    padding: 20px;
+  }
+}
 
-      .title {
-        font-size: 1.4rem;
-      }
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.2rem;
+  }
 
-      .btn {
-        width: 100%;
-        font-size: 0.95rem;
-      }
-    }
+  .btn {
+    width: auto;
+    font-size: 0.9rem;
+  }
+}
