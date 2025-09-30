@@ -2,21 +2,20 @@ var btnno = document.getElementById('btnno');
 var btnyes = document.getElementById('btnyes');
 
 btnno.addEventListener('mouseenter', () => {
-  var pos = coordenadas();
-  btnno.style.top = `${pos.posy}px`;
-  btnno.style.left = `${pos.posx}px`;
-});
+    console.log("mouse entrando");
+    var pos = coordenadas();
+    btnno.style.top = `${pos.posy}px`;
+    btnno.style.left = `${pos.posx}px`;
+})
 
-function coordenadas() {
-  // límites dentro del contenedor
-  var ancho = window.innerWidth - 100;
-  var alto = window.innerHeight - 150;
-  var posx = Math.random() * ancho;
-  var posy = Math.random() * alto;
-  return { posx, posy };
+var coordenadas = () => {
+    var ancho = screen.width - 100;
+    var alto = screen.height - 200;
+    var posx = Math.random() * (ancho - 0) + 0;
+    var posy = Math.random() * (alto - 0) + 0;
+    return { posx, posy }
 }
 
 btnyes.addEventListener('click', () => {
-  alert('¡Ya sabía que dirías que sí! 😍💖');
+    alert('ya sabia que dirias si ja ja :D, tanto te haces rogar ja ja ');
 });
-
