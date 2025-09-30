@@ -49,24 +49,8 @@ body {
 }
 /* esto es agregado */
 @media (max-width: 768px) {
-    .container .title {
-        font-size: 24px;
-        text-align: center;
-        padding: 0 10px;
-    }
-
-    .container .buttons {
-        margin-top: 20px;
-        margin-left: 0;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .container .buttons .btn {
-        position: static;
-        margin: 10px 0;
-        width: 80%;
-        font-size: 16px;
-    }
+  body {
+    background-position: 50% 20%; /* prueba valores: 50% 10% / 50% 30%, etc. */
+    background-attachment: scroll; /* asegúrate que no sea fixed en móviles */
+  }
 }
-
